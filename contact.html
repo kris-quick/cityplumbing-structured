@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | City Plumbing Services | Manchester</title>
+  <meta name="description" content="Contact City Plumbing Services for a free quote or to book an appointment. Phone, email, or use our enquiry form. Emergency? Call us directly — 0161 000 0000." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">City <span>Plumbing</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="tel:01610000000" class="nav-cta">📞 0161 000 0000</a>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <span class="section-label">Get in Touch</span>
+    <h1>Contact City Plumbing</h1>
+    <p>Use the form to send an enquiry and we will get back to you within one working day. For emergencies, call us directly — do not wait for a form response.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left column: info -->
+      <div class="contact-info">
+
+        <span class="section-label">Contact Details</span>
+        <h2 class="heading-ruled">How to Reach Us</h2>
+        <p>We cover all of Greater Manchester for plumbing, heating, and gas work. Call us for a quote, email us with a question, or use the form on the right for non-urgent enquiries.</p>
+
+        <div class="contact-details">
+
+          <div class="contact-detail">
+            <div class="detail-icon">📞</div>
+            <div class="detail-body">
+              <strong>Phone</strong>
+              <a href="tel:01610000000">0161 000 0000</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="detail-icon">✉️</div>
+            <div class="detail-body">
+              <strong>Email</strong>
+              <a href="mailto:info@cityplumbing.co.uk">info@cityplumbing.co.uk</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="detail-icon">📍</div>
+            <div class="detail-body">
+              <strong>Based In</strong>
+              <span>Manchester, M1 1AA</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="detail-icon">🛡️</div>
+            <div class="detail-body">
+              <strong>Gas Safe Registration</strong>
+              <span>Reg. 000000 — verifiable at GasSafeRegister.co.uk</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Opening hours -->
+        <div class="hours-grid">
+          <h4>Opening Hours</h4>
+          <div class="hours-row">
+            <span>Monday – Friday</span>
+            <span>7:30am – 6:00pm</span>
+          </div>
+          <div class="hours-row">
+            <span>Saturday</span>
+            <span>8:00am – 4:00pm</span>
+          </div>
+          <div class="hours-row">
+            <span>Sunday</span>
+            <span>Emergency calls only</span>
+          </div>
+          <div class="hours-row">
+            <span>Bank Holidays</span>
+            <span>Emergency calls only</span>
+          </div>
+        </div>
+
+        <!-- Emergency box -->
+        <div class="emergency-box">
+          <span class="emg-label">24/7 Emergency Line</span>
+          <h3>Plumbing Emergency?</h3>
+          <p>For burst pipes, major leaks, loss of heating, or any urgent plumbing problem — call us directly. Our emergency line is staffed around the clock by engineers, not call handlers. Do not use the contact form for emergencies.</p>
+          <a href="tel:01610000000" class="emg-number">0161 000 0000</a>
+        </div>
+
+      </div>
+
+      <!-- Right column: Netlify form -->
+      <div class="contact-form-wrap">
+        <span class="section-label" style="display:block;margin-bottom:10px;">Free Enquiry</span>
+        <h2>Send Us a Message</h2>
+        <p class="form-sub">We respond to all enquiries within one working day. For anything urgent, please call rather than use this form.</p>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none;">
+            <label>Do not fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Dave" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Halloran" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="dave@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="07700 000 000" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service...</option>
+              <option value="Emergency Call-Out">Emergency Call-Out</option>
+              <option value="Boiler Repair or Service">Boiler Repair or Service</option>
+              <option value="Bathroom Fitting">Bathroom Fitting</option>
+              <option value="General Plumbing">General Plumbing</option>
+              <option value="Landlord Gas Certificate">Landlord Gas Certificate</option>
+              <option value="Central Heating">Central Heating</option>
+              <option value="Other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="area">Your Area</label>
+            <input type="text" id="area" name="area" placeholder="e.g. Salford, Didsbury, Stockport..." />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About the Job *</label>
+            <textarea id="message" name="message" placeholder="Briefly describe what you need. The more detail you give, the more accurate our response can be..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.9rem;">
+            Send Enquiry
+          </button>
+
+          <p class="form-note">We will respond within one working day. By submitting this form you agree to being contacted by City Plumbing Services regarding your enquiry. We do not share your details with third parties.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AREAS COVERED
+     ============================================================ -->
+<section class="areas-section" style="background:var(--light);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Coverage</span>
+      <h2 class="heading-ruled">Areas We Cover</h2>
+      <p>We operate across the whole of Greater Manchester. Not sure if we cover you? Just call.</p>
+    </div>
+    <div class="areas-grid">
+      <a href="area-manchester.html" class="area-pill">Manchester City Centre</a>
+      <a href="area-salford.html" class="area-pill">Salford</a>
+      <a href="area-trafford.html" class="area-pill">Trafford</a>
+      <a href="area-stockport.html" class="area-pill">Stockport</a>
+      <a href="area-bury.html" class="area-pill">Bury</a>
+      <a href="area-bolton.html" class="area-pill">Bolton</a>
+      <a href="area-rochdale.html" class="area-pill">Rochdale</a>
+      <a href="area-oldham.html" class="area-pill">Oldham</a>
+      <a href="area-wigan.html" class="area-pill">Wigan</a>
+      <a href="area-tameside.html" class="area-pill">Tameside</a>
+      <a href="area-didsbury.html" class="area-pill">Didsbury</a>
+      <a href="area-chorlton.html" class="area-pill">Chorlton</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="cta-section">
+  <div class="cta-bg-texture"></div>
+  <div class="container">
+    <span class="section-label" style="display:block;text-align:center;margin-bottom:20px;">Always Here</span>
+    <h2>Need Us Now?</h2>
+    <p>Call us directly for the fastest response. Our phone is answered by engineers, not a call centre.</p>
+    <div class="cta-btns">
+      <a href="tel:01610000000" class="btn btn-primary">Call 0161 000 0000</a>
+      <a href="services.html" class="btn btn-outline-white">View Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">City <span>Plumbing</span></a>
+        <p>Trusted plumbing services across Greater Manchester. Gas Safe registered, fully insured, available 24/7.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Areas We Cover</h4>
+        <ul class="footer-links">
+          <li><a href="area-manchester.html">Manchester City Centre</a></li>
+          <li><a href="area-salford.html">Salford</a></li>
+          <li><a href="area-trafford.html">Trafford</a></li>
+          <li><a href="area-stockport.html">Stockport</a></li>
+          <li><a href="area-didsbury.html">Didsbury</a></li>
+          <li><a href="area-chorlton.html">Chorlton</a></li>
+          <li><a href="area-bury.html">Bury</a></li>
+          <li><a href="area-bolton.html">Bolton</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:01610000000">0161 000 0000</a></li>
+          <li><a href="mailto:info@cityplumbing.co.uk">info@cityplumbing.co.uk</a></li>
+          <li>Manchester, M1 1AA</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <p>&copy; 2026 City Plumbing Services. All rights reserved. | Gas Safe Reg: 000000</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Palette Switcher -->
+<div class="palette-switcher">
+  <span class="palette-switcher-label">Colour theme</span>
+  <button class="palette-btn" data-theme="" style="background:#f97316" title="Bold — Navy &amp; Orange"></button>
+  <button class="palette-btn" data-theme="dark" style="background:#06b6d4" title="Dark — Charcoal &amp; Cyan"></button>
+  <button class="palette-btn" data-theme="plum" style="background:#2d1b69" title="Plum &amp; Gold"></button>
+  <button class="palette-btn" data-theme="red" style="background:#dc2626" title="Slate &amp; Red"></button>
+  <button class="palette-btn" data-theme="teal" style="background:#0f4c3a" title="Dark Teal &amp; Amber"></button>
+</div>
+
+<script>
+  (function(){
+    var btns = document.querySelectorAll('.palette-btn');
+    var saved = localStorage.getItem('cp-theme') || '';
+    document.documentElement.setAttribute('data-theme', saved);
+    btns.forEach(function(b){
+      if(b.dataset.theme === saved) b.classList.add('active');
+      b.addEventListener('click', function(){
+        var t = b.dataset.theme;
+        document.documentElement.setAttribute('data-theme', t);
+        localStorage.setItem('cp-theme', t);
+        btns.forEach(function(x){ x.classList.remove('active'); });
+        b.classList.add('active');
+      });
+    });
+  })();
+
+  (function(){
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    if(toggle && links){
+      toggle.addEventListener('click', function(){
+        links.classList.toggle('open');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
